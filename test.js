@@ -5,9 +5,9 @@ function movingTo(value) {
             document.body.scrollTop = value;
             console.log("[" + document.body.scrollTop + "," + value+"]");
             if (value>document.body.scrollTop) {
-                setTimeout(arguments.callee,1000);
+                setTimeout(arguments.callee,100);
             }
-        },1000);
+        },100);
         isRunning = false;
     }
 }
