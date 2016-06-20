@@ -1,3 +1,8 @@
+var isRunning = true;
+
 function test(value) {
-  console.log("test:" + document.body.scrollTop + "," +value);	
+    if (isRunning) {
+        console.log("test:" + document.body.scrollTop + "," + value);
+        isRunning = false;
+    }
 }
